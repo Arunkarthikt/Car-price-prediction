@@ -1,16 +1,9 @@
-🚗 Car Price Analysis & Price Prediction
+🚗 Car Price Prediction
 📌 Project Overview
 
 This project combines Exploratory Data Analysis (EDA) and Machine Learning to analyze used car data and predict selling prices.
 
 The project is divided into two parts:
-
-📊 Power BI Dashboard (Business Insights)
-
-🤖 Machine Learning Model (Price Prediction – ~70% Accuracy)
-
-📊 Power BI Dashboard – Car Price Analysis
-
 An interactive dashboard was built in Power BI to visualize car resale trends and key influencing factors.
 
 🔎 Dashboard Features
