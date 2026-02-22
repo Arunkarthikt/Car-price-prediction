@@ -1,90 +1,121 @@
-# Car-price-prediction
-Project Overview
+🚗 Car Price Analysis & Price Prediction
+📌 Project Overview
 
-This project analyzes used car data and builds a Machine Learning model to predict car selling prices. The goal is to understand key factors influencing resale value and develop a predictive model with good accuracy.
- Dataset Information
+This project combines Exploratory Data Analysis (EDA) and Machine Learning to analyze used car data and predict selling prices.
 
-Duplicate Records Removed: 763
+The project is divided into two parts:
 
-Target Variable: Selling_Price
+📊 Power BI Dashboard (Business Insights)
 
-Features:
+🤖 Machine Learning Model (Price Prediction – ~70% Accuracy)
 
-Brand
+📊 Power BI Dashboard – Car Price Analysis
 
-Model
+An interactive dashboard was built in Power BI to visualize car resale trends and key influencing factors.
 
-Year
+🔎 Dashboard Features
+📌 KPI Cards
 
-KM_Driven
+Total Brands: 29
 
-Fuel
+Total Models: 1,475
 
-Seller_Type
+Average Selling Price: ₹473.91K
+
+📈 Visualizations Included
+
+Average Selling Price by Year
+
+Shows increasing price trend for newer vehicles
+
+Average Selling Price by Owner Type
+
+First-owner cars have highest resale value
+
+Average Selling Price by Fuel Type
+
+Diesel cars have highest average price
+
+Average Selling Price by Brand
+
+Luxury brands (Land Rover, Mercedes-Benz, BMW, Audi) show highest prices
+
+Transmission Comparison
+
+Automatic cars generally priced higher than manual
+
+Scatter Plot (KM Driven vs Selling Price)
+
+Higher KM driven reduces resale value
+
+🎛 Interactive Filters (Slicers)
+
+Year & Brand
 
 Transmission
 
-Owner
+Model
 
-✔ No missing values were found in the dataset.
+KM Driven range slider
 
-🔍 Data Preprocessing
+These slicers allow dynamic filtering and real-time insights.
 
-Removed 763 duplicate records
+🤖 Machine Learning – Car Price Prediction
+📊 Dataset Summary
 
-Applied Log Transformation to Selling_Price (to handle skewness)
+Original Records: 4,340
 
-Created new feature:
-Car_Age = Current Year − Year
+Duplicates Removed: 763
 
-Encoded categorical variables using One-Hot Encoding
+Final Records Used: 3,577
 
-Converted Owner category into numeric format
+No missing values
 
-Dropped Brand and Model (high cardinality)
+⚙️ Feature Engineering
 
- Model Building
+Log transformation on Selling_Price
 
-Selected important features based on Linear Regression coefficients
+Created Car_Age feature
 
-Train-Test Split: 80% – 20%
+Encoded categorical variables
 
-Model Used: Linear Regression
+Converted Owner to numeric
 
-Applied 5-Fold Cross Validation
+Removed high-cardinality columns (Brand, Model)
 
-📈 Model Performance
-Metric	Score
-Train R²	0.69
-Test R²	0.67
-Cross Validation R²	0.68
-Model Accuracy (Approx.)	~70%
-RMSE	0.47
+📈 Model Used
 
-✅ The model explains approximately 70% of the variance in car prices.
+Linear Regression
 
- Key Insights
+80–20 Train-Test Split
 
-Diesel cars generally have higher resale value
+5-Fold Cross Validation
 
-Manual transmission slightly reduces price
+📊 Model Performance
+Model Accuracy	~70%
 
-Car age negatively impacts selling price
+✅ The model explains approximately 70% of price variation.
 
-First-owner vehicles retain better value
-
-Kilometers driven negatively affects price
-
-🛠️ Technologies Used
+🛠️ Tools & Technologies
 
 Python
 
-Pandas
+Pandas, NumPy
 
-NumPy
-
-Matplotlib
-
-Seaborn
+Matplotlib, Seaborn
 
 Scikit-learn
+
+Power BI
+
+📌 Key Business Insights
+
+Diesel vehicles retain better resale value.
+
+First-owner cars sell at higher prices.
+
+Automatic transmission cars have premium pricing.
+
+Newer vehicles show strong upward price trend.
+
+KM Driven negatively impacts price.
