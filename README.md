@@ -56,11 +56,7 @@ These slicers allow dynamic filtering and real-time insights.
 🤖 Machine Learning – Car Price Prediction
 📊 Dataset Summary
 
-Original Records: 4,340
-
 Duplicates Removed: 763
-
-Final Records Used: 3,577
 
 No missing values
 
